@@ -1,0 +1,25 @@
+# checking for presence of allergens
+
+
+ingredients_allergy = {'ascorbic acid': 'corn', 'baking powder': 'corn', 'corn starch': 'corn', 'brown sugar': 'corn', 'calcium citrate': 'corn', 'caramel': 'corn', 'cellulose': 'corn', 'citrate': 'corn', 'citric acid': 'corn',
+'corn': 'corn', 'corn meal': 'corn', 'corn syrup': 'corn', 'decyl glucoside': 'corn', 'dextrin': 'corn', 'maltodextrin': 'corn', 'dextrose': 'corn', 'glucose': 'corn', 'ethanol': 'corn', 'ferrous gluconate': 'corn',
+'flavoring': 'corn', 'golden syrup': 'corn', 'honey': 'corn', 'hydrolyzed vegetable protein': 'corn', 'iodized salt': 'corn', 'lactic acid': 'corn', 'lauryl glucoside': 'corn', 'magnesium citrate': 'corn', 'magnesium stearate': 'corn', 'malic acid': 'corn',
+'malt': 'corn', 'maltitol': 'corn', 'maltose': 'corn', 'mannitol': 'corn', 'methyl gluceth': 'corn', 'monosodium glutamate': 'corn', 'polydextrose': 'corn', 'polylactic acid': 'corn', 'polysorbates': 'corn', 'potassium citrate': 'corn', 'powdered sugar': 'corn', 'sodium citrate': 'corn', 'sodium erythorbate': 'corn', 'sorbitan': 'corn', 'sorbitol': 'corn', 'starch': 'corn', 'sucralose': 'corn', 'tocopherol': 'corn', 'sweetN low': 'corn', 'vanilla extract': 'corn', 'vinegar': 'corn', 'xanthan gum': 'corn', 'xylitol': 'corn', 'zein': 'corn', 'butter': 'milk', 'casein': 'milk', 'cheese': 'milk', 'cottage cheese': 'milk', 'cream': 'milk', 'curds': 'milk', 'custard': 'milk', 'diacetyl': 'milk', 'ghee': 'milk', 'lactalbumin ': 'milk', 'lactoferrin': 'milk', 'lactose': 'milk', 'lactulose': 'milk', 'milk': 'milk', 'pudding': 'milk', 'Recaldent': 'milk', 'rennet casein': 'milk', 'sour cream': 'milk', 'whey': 'milk', 'hydrolysate': 'peanut', 'yogurt': 'milk', 'albumin': 'egg', 'albumen': 'egg', 'egg': 'egg', 'eggnog': 'egg', 'globulin': 'egg', 'livetin': 'egg', 'lysozyme': 'egg', 'mayonnaise': 'egg', 'meringue': 'egg', 'surimi': 'fish', 'vitellin': 'egg', 'ovo': 'egg', 'ova': 'egg', 'ovalbumin': 'egg', 'bulgur': 'wheat', 'cereal extract': 'wheat', 'club wheat': 'wheat', 'couscous': 'wheat', 'cracker meal': 'wheat', 'durum': 'wheat', 'einkorn': 'wheat', 'emmer': 'wheat', 'farina': 'wheat', 'flour': 'wheat', 'hydrolyzed wheat ': 'wheat', 'protein': 'wheat', 'Kamut': 'wheat', 'matzo': 'wheat', 'matza': 'wheat', 'pasta': 'wheat', 'seitan': 'wheat', 'semolina': 'wheat', 'spelt': 'wheat', 'sprouted wheat': 'wheat', 'triticale': 'wheat', 'vital wheat gluten': 'wheat', 'wheat': 'wheat', 'edamame': 'soy', 'miso': 'soy', 'natto': 'soy', 'soy': 'soy', 'soya': 'soy', 'soybean': 'soy', 'curd': 'soy', 'granules': 'soy', 'shoyu': 'soy', 'tamari': 'soy', 'tempeh': 'soy', 'textured vegetable protein': 'soy', 'tofu': 'soy', 'barnacle': 'shellfish', 'crab': 'shellfish', 'crawfish': 'shellfish', 'crawdad': 'shellfish', 'crayfish': 'shellfish', 'ecrevisse': 'shellfish', 'krill': 'shellfish', 'lobster': 'shellfish', 'langouste, ': 'shellfish', 'langoustine': 'shellfish', 'moreton bay bugs': 'shellfish', 'scampi ': 'shellfish', 'tomalley': 'shellfish', 'prawns': 'shellfish', 'shrimp': 'shellfish', 'crevette': 'shellfish', 'scampi': 'shellfish', 'almond': 'tree-nut', 'artificial nuts': 'peanut', 'beechnut': 'tree-nut', 'Brazil ': 'tree-nut', 'butternut': 'tree-nut', 'cashew': 'tree-nut', 'chestnut': 'tree-nut', 'chinquapin': 'tree-nut', 'filbert': 'tree-nut', 'hazelnut': 'tree-nut', 'gianduja': 'tree-nut', 'ginkgo': 'tree-nut', 'hickory': 'tree-nut', 'litchi': 'tree-nut', 'lichee': 'tree-nut', 'lychee': 'tree-nut', 'macadamia': 'tree-nut', 'marzipan': 'tree-nut', 'Nangai': 'tree-nut', 'natural nut extract ': 'tree-nut', 'nut butters': 'tree-nut', 'nut meal': 'tree-nut', 'nut meat': 'peanut', 'nut paste': 'tree-nut', 'nut pieces': 'peanut', 'pecan': 'tree-nut', 'pesto': 'tree-nut', 'pili': 'tree-nut', 'pine': 'tree-nut', 'pignoli, ': 'tree-nut', 'pignon, ': 'tree-nut', 'pinon': 'tree-nut', 'pinyon ': 'tree-nut', 'pistachio': 'tree-nut', 'praline': 'tree-nut', 'shea': 'tree-nut', 'walnut': 'tree-nut', 'beer nuts': 'peanut', 'peanut oil': 'peanut', 'goobers': 'peanut', 'ground nuts': 'peanut', 'mixed nuts': 'peanut', 'monkey nuts': 'peanut', 'peanut': 'peanut', 'barbecue sauce': 'fish', 'bouillabaisse': 'fish', 'caesar salad': 'fish', 'caviar': 'fish', 'deep fried items': 'fish', 'fish': 'fish', 'fish flavoring': 'fish', 'fish flour': 'fish', 'fish fume': 'fish', 'fish gelatin': 'fish', 'fish oil': 'fish', 'fish sauce imitation fish ': 'fish', 'maw ': 'fish', 'fish stock': 'fish', 'fishmeal': 'fish', 'nuoc mam': 'fish', 'anchovy': 'fish', 'roe': 'fish', 'salad dressing': 'fish', 'seafood flavoring': 'fish', 'shark cartilage': 'fish', 'shark fin': 'fish', 'sushi': 'fish', 'sashimi': 'fish', 'Worcestershire sauce': 'fish', 'strawberry': 'strawberry'}
+
+def check(ing):
+
+    found = {}
+
+    for i, elem in enumerate(ing):
+
+
+        try:
+            found[ingredients_allergy[elem]] = 1
+        except KeyError:
+            # print 'I got a KeyError - reason "%s"' % str(e)
+            continue
+        except:
+            continue
+            # print 'I got an IndexError - reason "%s"' % str(e)
+
+    return found
