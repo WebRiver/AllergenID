@@ -36,7 +36,7 @@ class SearchData extends React.Component {
     }
 
     render() {
-        <?>
+        <SearchDisplay data = {this.state.data} \>
     }
 
 }
