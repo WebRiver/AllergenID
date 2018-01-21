@@ -5,6 +5,9 @@ import Expo from 'expo';
 
 class SearchData extends React.Component {
 
+    static navigationOptions = {
+        title: "Select Allergies",
+    };
 
     constructor() {
         super();
@@ -36,6 +39,7 @@ class SearchData extends React.Component {
     }
 
     render() {
+        const {navigate} = this.props.navigation;
         <SearchDisplay data = {this.state.data} />
     }
 

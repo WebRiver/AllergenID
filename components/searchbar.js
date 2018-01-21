@@ -27,7 +27,7 @@ export default class SearchBar extends Component {
                 value={this.state.text}
                 editable={true}
                 maxLength={200}
-                onSubmitEditing = {() => navigate("Search Data", {stext : this.state.text})}
+                onSubmitEditing = {() => navigate("Search", {stext : this.state.text})}
             />
         </View>
     );

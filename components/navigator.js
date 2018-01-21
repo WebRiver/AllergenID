@@ -10,6 +10,7 @@ const RootNav = StackNavigator(
     {
         Home: {screen: HomeScreen},
         Allergies: {screen: AllergyScreen},
+        Search: {screen: SearchDataScreen}
         
     }, 
     {
