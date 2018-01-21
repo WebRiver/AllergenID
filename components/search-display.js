@@ -7,7 +7,7 @@ class SearchDisplay extends React.Component {
 
     render() {
         let search_data = this.props.data.map(function(foods) {
-                return {foodName:foods.name,}
+                return {foodName:foods.name,no:foods.nbdno}
             });
         }
     }
